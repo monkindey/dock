@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dock</title>
+	<style>
+		.menu {
+			position:absolute;
+		 	width:100%;
+		 	bottom:0;
+		 	text-align:center;
+		 }
+
+		 .gray {
+			-webkit-filter: grayscale(100%);
+			-moz-filter: grayscale(100%);
+			-ms-filter: grayscale(100%);
+			-o-filter: grayscale(100%);
+			filter: grayscale(100%);
+			filter: gray;
+		 }
+	</style>
+</head>
+<body>
+	<div id="menu" class="menu">
+		<img src="images/1.png" alt="" class="gray"/>
+		<img src="images/2.png" alt="" />
+		<img src="images/3.png" alt="" />
+		<img src="images/4.png" alt="" />
+		<img src="images/5.png" alt="" />
+		<img src="images/6.png" alt="" />
+		<img src="images/7.png" alt="" />
+		<img src="images/8.png" alt="" />
+		<img src="images/9.png" alt="" />
+		<img src="images/10.png" alt="" />
+		<img src="images/11.png" alt="" />
+	</div>
+</body>
+<script src="index.js"></script>
+<script>
+	dockEffect({
+		el: 'menu'
+	});
+</script>
+</html>
