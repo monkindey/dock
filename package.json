@@ -1,0 +1,9 @@
+{
+	"name": "mac.dock",
+	"dependencies": {},
+	"devDependencies": {
+		"gulp": "^3.9.0",
+		"imagemin-pngquant": "^4.2.0",
+		"gulp-imagemin": "~2.4.0"
+	}
+}
