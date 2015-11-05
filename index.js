@@ -16,6 +16,7 @@ var dockEffect = (function(Doc) {
 	 * cb: 回调函数(有监听事件就应该给回调函数)
 	 */
 	return function(config) {
+		config = config || {};
 		var dockWrap = Doc.getElementById(config.el);
 		var toTag = config.toTag || 'img';
 		var img = dockWrap.getElementsByTagName(toTag);
@@ -46,7 +47,6 @@ var dockEffect = (function(Doc) {
 				e = e || window.event;
 				for (i = 0; i < imgAmount; i++) {
 					x = e.clientX - (img[i].offsetLeft + img[i].offsetWidth / 2);
-					// y = img[i].offsetTop + menu.offsetTop + img[i].offsetHeight / 2 - e.clientY;
 					y = img[i].offsetTop + getOffsetTop(dockWrap) + img[i].offsetHeight / 2 - e.clientY;
 					imgScale = 1 - Math.sqrt(x * x + y * y) / 300;
 					if (imgScale < 0.5) {
